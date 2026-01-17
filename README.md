@@ -132,7 +132,21 @@ cd TradingSystem.Console
 dotnet run
 ```
 
+
+### 🤝 Support / Donate
+
+If this project helped you, consider buying me a coffee!
+
+**USDT (BEP20 / TRC20)**: `0x21a2c51F3e43C259F40dd4d81090C9dD7C8737f1`
+
+<img src="assets/usdt_qr.jpg" width="200" alt="USDT Donation QR">
+
+### 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Rockywei1/OpenXaiAlgo&type=Date)](https://star-history.com/#Rockywei1/OpenXaiAlgo&Date)
+
 ---
+
 
 <a id="chinese"></a>
 ## 🇨🇳 中文
@@ -261,4 +275,18 @@ dotnet run
 本项目采用 **GNU Affero General Public License v3.0 (AGPL-3.0)** 许可。
 这意味着如果您通过网络（例如 SaaS）提供基于本项目的服务，您必须向用户公开修改后的源代码。
 
+
+### 🤝 支持 / 捐赠
+
+如果本项目帮助了您，欢迎请我喝杯咖啡！
+
+**USDT (BEP20 / TRC20)**: `0x21a2c51F3e43C259F40dd4d81090C9dD7C8737f1`
+
+<img src="assets/usdt_qr.jpg" width="200" alt="USDT Donation QR">
+
+### 🌟 Star 历史
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Rockywei1/OpenXaiAlgo&type=Date)](https://star-history.com/#Rockywei1/OpenXaiAlgo&Date)
+
 Copyright © 2026 XaiAlgo.xyz
+
