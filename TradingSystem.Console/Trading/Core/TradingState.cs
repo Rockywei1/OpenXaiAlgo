@@ -5,7 +5,7 @@ namespace TradingSystem.Console.Trading;
 /// </summary>
 public class TradingState
 {
-    // 🔥 State Version Control
+    // State Version Control
     public int StateVersion { get; set; } = 1;           // State version, increments on save
     public DateTime LastUpdated { get; set; } = DateTime.UtcNow;  // Last updated time
     public string? LastUpdatedBy { get; set; }           // Last updated source (for debugging)
@@ -15,7 +15,7 @@ public class TradingState
     public bool IsInPosition { get; set; }
     public decimal EntryPrice { get; set; }
     public decimal Quantity { get; set; }
-    public decimal EntryCost { get; set; }  // 🔥 Buying total cost (including fees)
+    public decimal EntryCost { get; set; }  // Buying total cost (including fees)
     public decimal CurrentPrice { get; set; }
     public decimal HighestPriceSinceEntry { get; set; }
     public decimal StopLossPrice { get; set; }
@@ -27,18 +27,18 @@ public class TradingState
     public DateTime? LastTradeTime { get; set; }
     public string CurrentSignal { get; set; } = "";
     
-    // 🔥 New: Full Risk Control Support Fields
+    // Full Risk Control Support Fields
     public decimal PeakCapital { get; set; }          // Peak Capital
     public decimal DayStartCapital { get; set; }      // Daily Start Capital
     public decimal MaxDrawdown { get; set; }          // Max Drawdown
     public DateTime LastTradeDate { get; set; } = DateTime.MinValue;  // Last Trade Date
     
-    // 🔥 New: Trading Statistics
+    // Trading Statistics
     public int TotalTradeCount { get; set; }          // Total Trade Count
     public int TodayWinCount { get; set; }            // Today Win Count
     public int TotalWinCount { get; set; }            // Total Win Count
     
-    // 🔥 New: Order Tracking
+    // Order Tracking
     public long? PendingBuyOrderId { get; set; }      // Pending Buy Order ID
     public decimal PendingBuyPrice { get; set; }      // Pending Buy Order Price
     public decimal PendingBuyQuantity { get; set; }   // Pending Buy Order Quantity
@@ -46,7 +46,7 @@ public class TradingState
     public decimal PendingSellPrice { get; set; }     // Pending Sell Order Price
     public decimal PendingSellQuantity { get; set; }  // Pending Sell Order Quantity
     
-    // 🔥 New: Order Confirmation Mechanism
+    // Order Confirmation Mechanism
     public DateTime? LastOrderRequestTime { get; set; }   // Last Order Request Time
     public string? LastOrderRequestSide { get; set; }     // Last Order Request Side (BUY/SELL)
     public decimal LastOrderRequestQuantity { get; set; } // Last Order Request Quantity
@@ -65,7 +65,7 @@ public class TradingState
             DayStartCapital = Capital;
             TodayTrades = 0;
             TodayPnL = 0m;
-            TodayWinCount = 0;  // 🔥 New: Reset today win count
+            TodayWinCount = 0;  // Reset today win count
             LastTradeDate = today;
             
             // If paused due to daily loss, auto-resume on new day

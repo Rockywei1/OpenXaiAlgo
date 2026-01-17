@@ -46,13 +46,26 @@ Traditional trading bots often couple strategy logic with underlying execution l
 - **Prometheus Integration**: Natively exports `/metrics` for direct integration with Grafana monitoring dashboards.
 - **Hot Reload Configuration**: Supports runtime parameter modification (Capital, StopLoss, etc.) without restarting.
 
+- **Hot Reload Configuration**: Supports runtime parameter modification (Capital, StopLoss, etc.) without restarting.
+
 ### 🗺️ Roadmap / Todo
 
-- [ ] **Web Dashboard**: Blazor/React-based visual management panel
-- [ ] **Backtesting Engine**: Support for local historical data backtesting
-- [ ] **Machine Learning**: Integrate ONNX Runtime to support AI model inference
+#### 🏗️ Core & Stability
+- [ ] **Unit Testing**: Complete unit test coverage for core components
+- [ ] **Data Persistence**: Support SQLite/PostgreSQL for robust trade history storage
+- [ ] **CI/CD Integration**: Automatic build and test workflows using GitHub Actions
+
+#### 📈 Strategy & Analysis
+- [ ] **Backtesting Engine**: Local historical data backtesting with performance reporting
+- [ ] **Machine Learning**: Integrate ONNX Runtime for AI model inference
+- [ ] **Strategy Library**: Built-in standard indicators (RSI, MACD, Bollinger Bands)
+
+#### 🛠️ Operations & Usability
+- [ ] **Docker Support**: Official Dockerfile and docker-compose.yml for one-click deployment
+- [ ] **Web Dashboard**: Modern Blazor/React-based visual management panel
+- [ ] **Interactive Bot**: Telegram/Discord bot for real-time control (e.g., `/status`, `/stop`)
 - [ ] **Exchange Adapters**: Adapt to more exchanges like OKX, Bybit, etc.
-- [ ] **Notification**: Add Slack and Discord notification support
+
 
 ### � Dependencies (.NET Packages)
 
@@ -183,13 +196,26 @@ If this project helped you, consider buying me a coffee!
 - **Prometheus 集成**: 原生导出 `/metrics`，可直接集成 Grafana 监控仪表板。
 - **热重载配置**: 支持运行时修改参数（资金、止损等），无需重启。
 
+- **热重载配置**: 支持运行时修改参数（资金、止损等），无需重启。
+
 ### 🗺️ 路线图 / 待办事项
 
-- [ ] **Web 仪表板**: 基于 Blazor/React 的可视化管理面板
-- [ ] **回测引擎**: 支持本地历史数据回测
+#### 🏗️ 核心与稳定性
+- [ ] **单元测试**: 完善核心组件的单元测试覆盖率
+- [ ] **数据持久化**: 支持 SQLite/PostgreSQL 以实现更健壮的交易记录存储
+- [ ] **CI/CD 集成**: 使用 GitHub Actions 实现自动构建和测试工作流
+
+#### 📈 策略与分析
+- [ ] **回测引擎**: 支持本地历史数据回测及性能报告
 - [ ] **机器学习**: 集成 ONNX Runtime 以支持 AI 模型推理
+- [ ] **策略库**: 内置标准指标库（RSI, MACD, Bollinger Bands）
+
+#### 🛠️ 运维与易用性
+- [ ] **Docker 支持**: 提供官方 Dockerfile 和 docker-compose.yml 实现一键部署
+- [ ] **Web 仪表板**: 基于 Blazor/React 的可视化管理面板
+- [ ] **交互式机器人**: Telegram/Discord 机器人实现实时控制（如 `/status`, `/stop`）
 - [ ] **交易所适配**: 适配更多交易所，如 OKX, Bybit 等
-- [ ] **通知**: 增加 Slack 和 Discord 通知支持
+
 
 ### 📦 依赖项 (.NET 包)
 

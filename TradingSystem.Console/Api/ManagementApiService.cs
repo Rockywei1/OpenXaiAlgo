@@ -381,7 +381,7 @@ public class AssetStatus
     public string Symbol { get; set; } = "";
     public bool IsRunning { get; set; }
     public bool IsInPosition { get; set; }
-    public decimal Capital { get; set; }          // 🔥 New
+    public decimal Capital { get; set; }
     public decimal EntryPrice { get; set; }
     public decimal Quantity { get; set; }
     public decimal CurrentPrice { get; set; }
@@ -400,5 +400,5 @@ public class AssetStatus
     public string CurrentSignal { get; set; } = "";
     public decimal StopLossPrice { get; set; }
     public decimal HighestPriceSinceEntry { get; set; }
-    public int CandleCount { get; set; }          // 🔥 New
+    public int CandleCount { get; set; }
 }
